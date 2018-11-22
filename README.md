@@ -67,19 +67,19 @@ for i in `ls`; do
 done
 ```
 
-#Screenshot
+# Screenshot
 
-##Usuario:
+## Usuario
 ![usuarios](https://user-images.githubusercontent.com/7445276/48920323-74a49300-ee7f-11e8-8f24-51ef12e893b3.png) 
-##Filtro1:
+## Filtro1
 ![filtro1](https://user-images.githubusercontent.com/7445276/48920340-8ab25380-ee7f-11e8-94e7-8d63a2e01698.png)
-##Filtro2:
+## Filtro2
 ![filtro2](https://user-images.githubusercontent.com/7445276/48920342-8b4aea00-ee7f-11e8-930b-4c01f0e11b2c.png) 
-##Lista de ligações:
+## Lista de ligações
 ![ligacoes](https://user-images.githubusercontent.com/7445276/48920341-8b4aea00-ee7f-11e8-8e8f-cb77169e508a.png) 
-##Exportar para o Excel
+## Exportar para o Excel
 ![excel1](https://user-images.githubusercontent.com/7445276/48920344-8b4aea00-ee7f-11e8-962c-ae4462ef44ad.png) 
-##Planilha com resultados
+## Planilha com resultados
 ![excel2](https://user-images.githubusercontent.com/7445276/48920343-8b4aea00-ee7f-11e8-82f0-c9a58b20de93.png) 
 
 
