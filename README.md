@@ -2,17 +2,17 @@
 
 <dl>
 	<dt>Escutar ligações gravadas pelo Asterisk através de uma pagina em PHP.</dt>
-	<dd>É possivel filtar as ligaçoes por ramal, mes e ano e ainda exportar para o Excel</dd>
+	<dd>É possivel filtar as ligaçoes por ramal, mês e ano, e ainda exportar para o Excel</dd>
 </dl>
 
 Para que funcione, é necessário alimentar um banco de dados Mysql 
-com um Script que monitore a pasta /var/spool/asterisk/monitor/.crie um link 
-simbolico chamado "audio" dentro da pasta principal da sua pagina para o local onde o
-asterisk grava as ligaçoes.
+com um Script que monitore a pasta /var/spool/asterisk/monitor/. 
+Crie um link simbolico chamado "audio" dentro da pasta principal da sua página para o local onde o
+asterisk grava as ligações.
 ```bash
 usuario@servidor:/var/www$ ln -ls /var/spool/asterisk/monitor/ audio
 ```
-Nas configuraçoes do Asterisk  altere a string de salvamento no arquivo de configuração 'extensions.conf'.
+Nas configurações do Asterisk,  altere a string de salvamento no arquivo de configuração 'extensions.conf'.
 A string tem que ter o seguinte formato: 
 ```
 exten => _XX.,1,Set(MONITOR_FILENAME=${STRFTIME(${EPOCH},,%Y-%m-%d_%H.%M.%S)}_${CDR(src)}_${CDR(dst)}_${CDR(billsec)})
@@ -40,9 +40,9 @@ CREATE TABLE `Usuario` (
 	PRIMARY KEY (`id_usuario`)
 )
 ```
-E por fim o script que varre o o diretório /var/spool/asterisk/monitor/ e alimenta a tabela Ligacoes
+E por fim o script que varre o diretório /var/spool/asterisk/monitor/ e alimenta a tabela Ligacoes
 
-(fica por sua conta crirar um procedimento de varredura altomatica)
+(fica por sua conta crirar um procedimento de varredura automática)
 
 
 ```bash
