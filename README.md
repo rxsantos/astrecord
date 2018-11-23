@@ -5,7 +5,7 @@
 	<dd>É possivel filtar as ligaçoes por ramal, mes e ano e ainda exportar para o Excel</dd>
 </dl>
 
-Para que funcione é necessario alimentar um banco de dados Mysql 
+Para que funcione, é necessário alimentar um banco de dados Mysql 
 com um Script que monitore a pasta /var/spool/asterisk/monitor/.crie um link 
 simbolico chamado "audio" dentro da pasta principal da sua pagina para o local onde o
 asterisk grava as ligaçoes.
